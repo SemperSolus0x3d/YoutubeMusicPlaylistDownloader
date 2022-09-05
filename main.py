@@ -73,6 +73,7 @@ def _main():
         postprocessors=[dict(
             key='FFmpegExtractAudio',
             preferredcodec=audio_format,
+            preferredquality=0
         )],
         outtmpl='%(playlist_title)s/%(title)s-%(id)s.%(ext)s'
     )
